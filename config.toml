@@ -1,0 +1,11 @@
+baseurl = "http://kenmhaggerty.com/blog/"
+languageCode = "en-us"
+title = "Blog • Ken M. Haggerty"
+theme = "angels-ladder"
+
+[Params]
+home = "http://kenmhaggerty.com"
+twitter = "https://twitter.com/kenmhaggerty"
+github = "https://github.com/kenmhaggerty"
+showsRSS = true
+copyright = "Written by Ken M. Haggerty • 2016"
