@@ -1,0 +1,64 @@
+hr {
+  background-color: #ccc;
+  height: 1px;
+}
+.article-header {
+  color: #29abe2;
+  border-left: none;
+  margin: 10px 0px 25px 0px;
+  padding: 5px 0px 5px 0px;
+}
+article h3 {
+  margin: 0px 0px;
+}
+.nobr {
+  white-space: nowrap;
+}
+div.figure {
+  border-width: thin;
+  border-style: solid;
+  border-color: #ccc;
+  margin: 0px -3px 3px -3px;
+  min-height: 10px;
+  text-align: center;
+}
+*, ::after, ::before {
+  border-style: none;
+}
+.caption {
+  font-size: smaller;
+  line-height: 0;
+}
+.footnotes {
+  font-size: x-small;
+}
+footer {
+  padding: 0px 0px;
+}
+sup {
+  vertical-align: top;
+  font-size: smaller;
+  position: relative;
+  top: -0.5em;
+}
+a:not([href]) {
+  color: #bbc;
+}
+a:not([href]):hover {
+  color: red;
+  text-decoration: underline;
+}
+article blockquote {
+  border-left-width: 2px;
+}
+blockquote code {
+  font-style: normal;
+}
+ul, ol {
+  margin: 25px 0px 25px 30px;
+}
+.figureContent {
+  border-width: 0px 1px;
+  border-style: solid;
+  border-color: #ccc;
+}
