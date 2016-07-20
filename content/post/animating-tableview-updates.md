@@ -1,7 +1,10 @@
 +++
 date = "2016-07-04T17:58:44-04:00"
 draft = false
+image = "animating-tableview-updates/hero.png"
 title = "A Better Way To Animate Table View Updates"
+
+description = "Those of you familiar with UITableView methods are probably comfortable inserting, reordering, and deleting rows from your table view, but what happens if you want to perform a mix of these actions within a single animation?"
 
 +++
 

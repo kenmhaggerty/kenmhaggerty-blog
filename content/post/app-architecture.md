@@ -3,6 +3,8 @@ date = "2016-07-01T11:10:04-04:00"
 draft = false
 title = "App Architecture (or, Making Sure The Chef Isn't Performing Heart Surgery)"
 
+description = "When it came to building an app that both persists data locally and synchronizes data with a remote server, I spent some time making sure that what I built not only worked but also made sense."
+
 +++
 
 When I think about classes in Objective-C I imagine running a restaurant. A well run restaurant not only prepares good food but also provides excellent service and manages employees well. A good restaurant also delegates out whatever it cannot or should not do itself. For example: if a guest at your restaurant were in need of medical attention, you would probably call an ambulance and not ask your chef to attempt heart surgery (no matter how good he or she may be with knives).
