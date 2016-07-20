@@ -1,6 +1,7 @@
 +++
 draft = true
-image = ''
+image = ""
+description = ""
 +++
 
 Hello World!
