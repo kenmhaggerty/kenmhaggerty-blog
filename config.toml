@@ -5,7 +5,7 @@ theme = "angels-ladder"
 
 [Params]
 home = "http://kenmhaggerty.com"
-twitter = "https://twitter.com/kenmhaggerty"
-github = "https://github.com/kenmhaggerty"
+twitter = "kenmhaggerty"
+github = "kenmhaggerty"
 showsRSS = true
 copyright = "Written by Ken M. Haggerty • 2016"
