@@ -9,6 +9,9 @@ hr {
   padding: 5px 0px 5px 0px;
 }
 article h3 {
+  margin: 30px 0px 25px 0px;
+}
+article h4 {
   margin: 0px 0px;
 }
 .nobr {
@@ -61,4 +64,29 @@ ul, ol {
   border-width: 0px 1px;
   border-style: solid;
   border-color: #ccc;
+}
+h4 {
+  font-size: 14px;
+}
+h4 + p {
+  margin: 2px 0px 25px 0px;
+}
+article h2 {
+  margin: 30px 0px 20px 0px;
+}
+article h1 {
+  margin: 40px 0px 35px 0px;
+  background-color: #eee;
+  outline-color: #eee;
+  border-color: #eee;
+  outline-style: solid;
+  outline-width: 6px;
+  border-style: solid;;
+  border-width: 8px 0px;
+}
+.ellipsis {
+  font-family: Helvetica, sans-serif;
+}
+div.article-header h1 a, div.article-header h1 a:visited {
+  color: #29abe2;
 }
