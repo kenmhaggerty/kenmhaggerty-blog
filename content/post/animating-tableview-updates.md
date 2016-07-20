@@ -17,7 +17,7 @@ Those of you familiar with UITableView methods are probably comfortable insertin
 If you are efficient and looking for the simplest solution, the answer is to call `[self.tableview reloadData]` and update the entire table view at once. While this works, the lack of animations can be, in certain situations, extremely confusing to the user&mdash;much like the following GIF:
 
 <div class="figure">
-<img src="/blog/images/animating-tableview-updates/change-blindness.gif">
+  <img src="/blog/images/animating-tableview-updates/change-blindness.gif">
 </div>
 <span class="caption">**Above** An example of [change blindness](https://en.wikipedia.org/wiki/Change_blindness). Can you spot the difference between the two images? A blank frame added between the two images breaks the visual continuity, making it much harder to spot changes. Similarly, when updates to UITableView are not animated, it can be very difficult to spot what changed. [[Source]](https://www.csc.ncsu.edu/faculty/healey/PP/)</span>
 
@@ -41,11 +41,11 @@ This method takes in the follow ten parameters:
 To help illustrate, I've embedded an interactive demo below showing. Try it out and let me know what you think!
 
 <div class="figure">
-<iframe class="figureContent" src="https://appetize.io/embed/qkm9627b77pvrr7rqf831ty84r?device=iphone4s&scale=100&autoplay=true&orientation=portrait&screenOnly=true" width="320px" height="480px" scrolling="no"></iframe>
+  <iframe class="figureContent" src="https://appetize.io/embed/qkm9627b77pvrr7rqf831ty84r?device=iphone4s&scale=100&autoplay=true&orientation=portrait&screenOnly=true" width="320px" height="480px" scrolling="no"></iframe>
 </div>
 <span class="caption">**Above** Tap "Shuffle" to generate random data for the table view. By toggling the switch at top-left, you can see the difference between animated and instantaneous table view updates for yourself. [[Created using Appetize.io]](https://appetize.io)</span>
 
 * * *
 <p class="footnotes">
-<a name="footnote_1" href="#ref_1">1</a> Currently this method only supports updating one table view section at a time. At some point I should implement a version that supports updating multiple table view sections simultaneously, e.g., for when table view cells are moved between sections.
+  <a name="footnote_1" href="#ref_1">1</a> Currently this method only supports updating one table view section at a time. At some point I should implement a version that supports updating multiple table view sections simultaneously, e.g., for when table view cells are moved between sections.
 </p>
