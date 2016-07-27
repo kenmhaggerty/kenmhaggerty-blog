@@ -52,7 +52,12 @@ a:not([href]):hover {
   text-decoration: underline;
 }
 article blockquote {
+  border-left-style: solid;
   border-left-width: 2px;
+  border-left-color: #999;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: normal;
+  font-size: 1.05em;
 }
 blockquote code {
   font-style: normal;
@@ -89,4 +94,13 @@ article h1 {
 }
 div.article-header h1 a, div.article-header h1 a:visited {
   color: #29abe2;
+}
+pre.block {
+  line-height: 1.5em;
+  border-width: thin;
+  border-style: solid;
+  border-color: #ccc;
+  margin: 0px -3px 0px -3px;
+  padding: 0px 3px 3px 3px;
+  border-radius: 2px;
 }
