@@ -8,6 +8,8 @@ description = "Those of you familiar with UITableView methods are probably comfo
 
 +++
 
+_N.b. &mdash; I fixed a bug in the method described below where the method would crash if changes were made to the table view data during animation. I've updated this blog post to reflect these changes._ (Aug 3, 2016)<sup id="ref_2">[&#8224;](#footnote_2)</sup>
+
 Whenever I find myself re-using a helper method in many of my classes or projects, I like to add it to a shared class I created called [**KMHGenerics**](https://github.com/kenmhaggerty/KMHGenerics). This class contains generically useful methods so that my actual code can remain as ["dry"](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) as possible.
 
 Today I'm going to talk about a method I wrote to animate complex updates to UITableViews. The KMHGenerics class shared [here on GitHub](https://github.com/kenmhaggerty/KMHGenerics) includes many other methods too, but I'll save those for another blog post.
@@ -23,15 +25,15 @@ If you are efficient and looking for the simplest solution, the answer is to cal
 
 Instead, I've written the following method on UITableView to perform updates in a single animation:
 
-<script src="https://gist.github.com/kenmhaggerty/9c0124d7684413fec140263a3c435aa9.js"></script>
+<script src="https://gist.github.com/kenmhaggerty/85c19898b8e45958cbfe0302f72aefd6.js"></script>
 
 This method takes in the follow ten parameters:
 
-- **array**: The current state of the data supplying the table view.
-- **toArray**: The desired final state of your table view's data.
 - **section**: Which section of your table view to animate.<sup id="ref_1">[1](#footnote_1)</sup>
+- **data**: The desired final state of your table view's data.
 - **insertionAnimation**: What animation style to use when inserting new cells in your table view.
 - **deletionAnimation**: What animation style to use when deleting cells from your table view.
+- **getter**: A block that gets the data for your table view.
 - **setter**: A block that sets the data for your table view.
 - **insertedCells**: An optional block to execute on the cells that will be inserted.
 - **reorderedCells**: An optional block to execute on the cells that will be reodered.
@@ -47,5 +49,7 @@ To help illustrate, I've embedded an interactive demo below showing. Try it out 
 
 * * *
 <p class="footnotes">
+  <a name="footnote_2" href="#ref_2">&#8224;</a> The original and now deprecated method declaration is still available on <a href="https://gist.github.com/kenmhaggerty/9c0124d7684413fec140263a3c435aa9">GitHub Gist</a>.
+  <br />
   <a name="footnote_1" href="#ref_1">1</a> Currently this method only supports updating one table view section at a time. At some point I should implement a version that supports updating multiple table view sections simultaneously, e.g., for when table view cells are moved between sections.
 </p>
