@@ -62,8 +62,14 @@ These security rules are a little complex, but the high level overview is:
 - Only the appropriate user can see which objects have been specifically shared with that user.
 - Only users with whom the object has been specifically shared can edit whether an object is public.
 - Only users with whom the object has been specifically shared can share the object with others.
-- Permissions can only be created for object IDs that exist.
+- Permissions can only be created for object IDs that exist. &mdash; _n.b. unless the current user is granting themselves permission to create a new object._<sup id="ref_1">[&#8224;](#footnote_1)</sup>
+- Objects can only be saved at object IDs to which the user has access.<sup>[&#8224;](#footnote_1)</sup>
 - Users can always removes themselves from a shared object.
 - New objects can only be created by authenticated users.
 
 I've tested out these security rules in Firebase's invaluable new [Security Simulator](https://firebase.googleblog.com/2012/12/the-new-firebase-security-api.html), and from what I can see all of these requirements seem to be met. I'll have to write some tests to ensure that this is the case both in its current incarnation and in all future updates; but for now, I am definitely very proud.
+
+* * *
+<p class="footnotes">
+<a name="footnote_1" href="#ref_1">&#8224;</a> ADDED: While writing <a href="/blog/post/firebase-acl-part-1/">Part 2</a>, I realized the need to be able to set a user permission for yourself prior to creating a new object. To clarify, I appended the italicized text and added the next point, and I corrected my security rules to reflect this change. (Aug 4, 2016)
+</p>
